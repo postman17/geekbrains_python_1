@@ -13,9 +13,12 @@
 
 l = ["яблоко", "банан", "киви", "арбуз"]
 dig = 0
+size = len(max(l))
 for value in l:
     dig += 1
-    print('{}. {}'.format(dig, value))
+    prevalue = value.rjust(size)
+    print('{}. {}'.format(dig, prevalue))
+
 
 # Задача-2:
 # Даны два произвольные списка.
